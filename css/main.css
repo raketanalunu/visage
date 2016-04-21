@@ -72,6 +72,7 @@ section a:hover{
 }
 
 section img {
+    display: inline-block;
     width: 200px;
     height: 210px;
 }
