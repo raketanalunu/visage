@@ -5,10 +5,9 @@ body {
 header {
     height: 700px;
     background: #000000 url("../images/main-photo.jpg") no-repeat;
+    background-position: fixed;
     background-size: cover;
     text-align: center;
-    background-attachment: scroll;
-    background-position: center center;
 }
 
 nav {
@@ -33,6 +32,7 @@ h1{
     border: 8px solid #ffffff;
     padding:10px;
     margin: 20px 10px;
+    font-family: 'Marck Script', cursive;
 }
 
 article {
