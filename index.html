@@ -15,60 +15,54 @@
         <!--[if gt IE 8]><!-->
             <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
         <!--<![endif]-->
-        <link href='https://fonts.googleapis.com/css?family=Marck+Script|Neucha|PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic|Ubuntu:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link type="text/css" rel="stylesheet" href="css/reset.css">
         <link type="text/css" rel="stylesheet" href="css/main.css">
     </head>
-    <body>
-        
+    
+    <body>    
         <header>
             <nav>
                 <a href="#">Обо мне</a>
                 <a href="#">Мои работы</a>
                 <a href="#">Контакты</a>
             </nav>
-            <h1>Анастасия Чепелева<br>визажист</h1>
+            <div class="header-container"> 
+                <h1><big>Анастасия Чепелева</big><br><small>визажист</small></h2>
+            </div>
         </header>
         
-        <div class="pure-g">
-            <div class="pure-u-1-12 pure-u-sm-1-5 pure-u-lg-1-4"></div>
-            <div class="pure-u-5-6 pure-u-sm-3-5 pure-u-lg-1-2">
-                <article>
+        <main class="pure-g">
+            <section class="light pure-u-1">
+                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
+                <article class="pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2">
                     <h2>Обо мне</h2>
                     <img class="avatar" src="images/avatar.jpg">
-                    <p>Я проходила обучение макияжа и искусству визуальной стилистики у лучших мастеров в этой области. Постоянно повышаю свою квалификацию в данных областях, посещая различные мастер-классы. Работаю в разных техниках и только на профессиональной гипоалергенной косметике класса «Люкс»: MAC, Make Up For Ever, Atelier.</p><p>В жизни каждой женщины бывают дни, когда нужно выглядеть, как говорят : «на все сто». С помощью макияжа можно с легкостью дополнить Ваш образ, убрать все несовершенства кожи, следы усталости, расставить верные акценты. Каждая женщина – прекрасна, нужно просто грамотно подчеркнуть ее природную красоту и индивидуальность.</p><p>Я с удовольствием помогу Вам преобразиться, создать тот самый неповторимый образ для таких мероприятий как: свадьба, выпускной, день рождения, корпоратив, фотосессия и не только!
-        Также предлагаю Вашему вниманию Курсы макияжа для себя в Санкт-Петербурге
-        и профессиональные курсы для будущих визажистов. В наличие имеются подарочные сертификаты как на макияж, так и на курсы макияжа.</p>
+                    <p>Я проходила обучение макияжа и искусству визуальной стилистики у лучших мастеров в этой области. Постоянно повышаю свою квалификацию в данных областях, посещая различные мастер-классы. Работаю в разных техниках и только на профессиональной гипоалергенной косметике класса «Люкс»: MAC, Make Up For Ever, Atelier.</p>
+                    <p>В жизни каждой женщины бывают дни, когда нужно выглядеть, как говорят : «на все сто». С помощью макияжа можно с легкостью дополнить Ваш образ, убрать все несовершенства кожи, следы усталости, расставить верные акценты. Каждая женщина – прекрасна, нужно просто грамотно подчеркнуть ее природную красоту и индивидуальность.</p>
+                    <p>Я с удовольствием помогу Вам преобразиться, создать тот самый неповторимый образ для таких мероприятий как: свадьба, выпускной, день рождения, корпоратив, фотосессия и не только! Также предлагаю Вашему вниманию Курсы макияжа для себя в Санкт-Петербурге и профессиональные курсы для будущих визажистов. В наличие имеются подарочные сертификаты как на макияж, так и на курсы макияжа.</p>
                 </article>
-                <div class="divider"></div>
-            </div>
-            <div class="pure-u-1-12 pure-u-sm-1-5 pure-u-lg-1-4"></div>
-            
-            
-            
-            <div class="pure-u-1-12 pure-u-sm-1-8 pure-u-lg-1-5"></div>
-            <div class="pure-u-5-6 pure-u-sm-3-4 pure-u-lg-3-5">
-                <section>
-                    <h2><a href="#">Портфолио</a></h2>
-                    <figure> 
-                        <img src="works/photo-01.jpg">
-                        <img src="works/photo-02.jpg">
-                        <img src="works/photo-03.jpg">
-                        <img src="works/photo-04.jpg">
-                        <img src="works/photo-05.jpg">
-                        <img src="works/photo-06.jpg">
-                    </figure>    
-                </section>
-            </div>
-            <div class="pure-u-1-12 pure-u-sm-1-8 pure-u-lg-1-5"></div>
-        </div>
+                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
+            </section>
+        
+            <section class="dark pure-u-1">
+                <h2 id="portfolio"><a href="#">Портфолио</a></h2>
+                <div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-01.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-02.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-03.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-04.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-05.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-06.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-07.jpg)"></div></div><!--
+             --><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-08.jpg)"></div></div>
+                                
+            </section>
+        </main>
         
         <footer>
-            <p>
-                <a href="http://vk.com/anastasia_noir" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
-                <a href="https://www.instagram.com/anastasia_noir_mua/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            </p>
+            <p><a href="http://vk.com/anastasia_noir" target="_blank"><i class="fa fa-vk fa-2x"></i></a><!--
+            --><a href="https://www.instagram.com/anastasia_noir_mua/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></p>
         </footer>
     </body>
 </html>
