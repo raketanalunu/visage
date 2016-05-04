@@ -1,8 +1,0 @@
-# Site settings
-title: Anastasia Home Page
-timezone: Europe/Moscow 
-encoding: UTF-8
-baseurl: ""
-
-# Build settings
-markdown: kramdown
