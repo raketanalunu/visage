@@ -21,10 +21,17 @@ header {
 
 nav {
     background:rgba(0,0,0,0.6);
-    padding: 1rem;
     position: fixed;
     width: 100%;
     z-index: 999;
+    font-size: 0.7rem;
+    display: inline-block;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+nav div {
+    display: inline-block;    
 }
 
 nav a {
@@ -50,34 +57,75 @@ h2 {
     text-transform: uppercase;
 }
 
-h1 a, h2 a {
-    text-decoration: none;
-    color: #3a3b3c;
-}
-
 p {
     margin: 1rem 0;
 }
 
-section {
-    
-}
-
 section.dark {
-    background: #f5f5f5;  
+    background: #F8EFFB;  
 }
 
 article {
     padding: 3rem 0;
 }
 
+form {
+    padding: 3rem;   
+}
+
+label {
+    margin: 2em 0;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    margin: 8px 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: 2px solid #F8EFFB;
+}
+
+textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+form p,
+.align p {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 2rem;
+    color: #800080;
 }
+
 
 footer i {
     padding: 0 0.5rem;
+}
+
+footer i {
+    color: #800080;
+    -webkit-transition:color .2s ease-in;
+    -moz-transition:color .2s ease-in;
+    -o-transition:color .2s ease-in;
+    transition: all .2s ease-in;
+    margin: 0 0.1em;
+    
+}
+
+footer a:hover i {
+    color: rgba(0,0,0,0.4);
 }
 
 
@@ -91,6 +139,17 @@ footer i {
 
 .header-container {
     padding: 10rem 0;
+}
+
+.menu {
+    float: left;
+    width: 50%; 
+}
+
+.contacts {
+    width: 50%;
+    font-size: 0.8rem;
+    text-align: right;    
 }
 
 .avatar {
@@ -131,9 +190,33 @@ footer i {
     opacity: 1.0;
 }
 
+.align {
+    display: inline-block;    
+}
+
+.service {
+    background: #ffffff;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    border-right: 1px solid #800080;
+}
+
+.button {
+    margin: 1rem auto;
+    background: #800080;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (min-width: 35.5em) {
     .photo-box {
         padding-top: 40%;
+    }
+        
+    nav a {
+        font-size: 1rem;
     }
 }
 
