@@ -1,137 +1,72 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Home page</title>
-          
+---
+layout: default
+---
+<main class="pure-g">
+    <section class="light pure-u-1" id="page-one">
+        <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
+        <article class="pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2">
+            {% capture about %}{% include text/about.md %}{% endcapture %}
+            <h2>{{ site.about }}</h2>
+            <img class="avatar" src="{{ site.avatar }}">
+            {{ about | markdownify }}
+        </article>
+        <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
+    </section>
     
-        <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
-        <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-        <!--<![endif]-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic|Ubuntu:400,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-        <link type="text/css" rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/pure-extension.css">
-        <link type="text/css" rel="stylesheet" href="css/main.css">
-       
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-        <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-    </head>
+    <section class="dark pure-u-1" id="page-two">
+        <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
+        <article class="align pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2">
+            <h2>Услуги</h2>
+            <p>Буду рада создать для вас шикарный и неповторимый образ!</p>                   
+                <div class="columns">
+                    <div class="pure-u-1 pure-u-lg-1-3"><h3><strong>Макияж</strong></h3><img src="icons/makeup.png"><p>Дневной и вечерний, свадебный, фотомакияж, макияж для выпускного, детский и мужской макияж</p></div><!--
+                --><div class="pure-u-1 pure-u-lg-1-3"><h3><strong>Прическа</strong></h3><img src="icons/hair.png"><p>Локоны, греческая прическа, объемная укладка, локоны с зачесом на бок</p></div><!--
+                --><div class="pure-u-1 pure-u-lg-1-3"><h3><strong>Брови</strong></h3><img src="icons/eyebrows.png"><p>Моделирование и коррекция, окраска бровей и ресниц</p></div>
+                </div>
+        </article>
+        <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
+    </section>
     
-    <body>    
-        <header>
-            <input type="checkbox" id="menu-checkbox" />
-            <nav role="navigation">
-                <label for="menu-checkbox" class="toggle-button" onclick><i class="fa fa-bars fa-lg"></i></label>
-                <ul class="menu">
-                    <li><a href="#page-one">Обо мне</a></li>
-                    <li><a href="#page-two">Услуги</a></li>
-                    <li><a href="#page-three">Портфолио</a></li>
-                    <li><a href="#page-four">Контакты</a></li>
-                </ul>    
-                <ul class="contacts">
-                    <li><a href="http://vk.com/anastasia_noir" target="_blank"><i class="fa fa-vk fa-lg"></i></a></li>
-                    <li><a href="https://www.instagram.com/anastasia_noir_mua/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
-                    <li><a href="tel:+79118243651">+7 (911) 824 36 51</a></li>
-                </ul>
-            </nav>
-            <div class="header-container"> 
-                <h1><big>Анастасия Чепелевская</big><br><small>визажист</small></h1>
-            </div>
-        </header>
-        
-        <main class="pure-g">
-            <section class="light pure-u-1" id="page-one">
-                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
-                <article class="pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2">
-                    <h2>Обо мне</h2>
-                    <img class="avatar" src="images/avatar.jpg">
-                    <p>Я проходила обучение макияжа и искусству визуальной стилистики у лучших мастеров в этой области. Постоянно повышаю свою квалификацию в данных областях, посещая различные мастер-классы. Работаю в разных техниках и только на профессиональной гипоалергенной косметике класса «Люкс»: MAC, Make Up For Ever, Atelier.</p>
-                    <p>В жизни каждой женщины бывают дни, когда нужно выглядеть, как говорят : «на все сто». С помощью макияжа можно с легкостью дополнить Ваш образ, убрать все несовершенства кожи, следы усталости, расставить верные акценты. Каждая женщина – прекрасна, нужно просто грамотно подчеркнуть ее природную красоту и индивидуальность.</p>
-                    <p>Я с удовольствием помогу Вам преобразиться, создать тот самый неповторимый образ для таких мероприятий как: свадьба, выпускной, день рождения, корпоратив, фотосессия и не только! Также предлагаю Вашему вниманию Курсы макияжа для себя в Санкт-Петербурге и профессиональные курсы для будущих визажистов. В наличие имеются подарочные сертификаты как на макияж, так и на курсы макияжа.</p>
-                </article>
-                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
-            </section>
-            
-            <section class="dark pure-u-1" id="page-two">
-                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
-                <article class="align pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2">
-                    <h2>Услуги</h2>
-                    <p>Буду рада создать для вас шикарный и неповторимый образ!</p>                   
-                      <div class="columns">
-                          <div class="pure-u-1 pure-u-md-1-3 col"><h3><strong>Макияж</strong></h3><p>Дневной макияж, вечерний макияж, свадебный макияж, фотомакияж, макияж для выпускного, детский макияж, мужской макияж</p></div><!--
-                       --><div class="pure-u-1 pure-u-md-1-3 col"><h3><strong>Прическа</strong></h3><p>Локоны, греческая прическа, объемная укладка, локоны с зачесом на бок</p></div><!--
-                       --><div class="pure-u-1 pure-u-md-1-3 col"><h3><strong>Брови</strong></h3><p>Моделирование и коррекция бровей, окраска бровей и ресниц</p></div>
-                      </div>
-                </article>
-                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
-            </section>
-            
-            
-            <section class="light pure-u-1" id="page-three">
-                <h2 id="portfolio">Портфолио</h2>
-                <a class="fancybox" rel="group" href="works/photo-01.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-01.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-10.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-10.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-03.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-03.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-04.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-04.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-05.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-05.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-06.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-06.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-07.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-07.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-09.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-09.jpg)"></div></div></a><!-- 
-             --><a class="fancybox" rel="group" href="works/photo-12.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-12.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-14.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-14.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-15.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-15.jpg)"></div></div></a><!--
-             --><a class="fancybox" rel="group" href="works/photo-08.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-08.jpg)"></div></div></a>              
-            </section>
-            
-            <section class="dark pure-u-1" id="page-four">
-                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
-                <form class="pure-form pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2" id="contactform" method="POST">
-                    <h2>Контакты</h2>
-                    <p>Вы можете связаться со мной, отправив сообщение<br>или по телефону <strong>+7 (911) 8243651</strong></p>
-                    <div class="pure-g">  
-                        <div class="pure-u-1">
-                            <label for="name">Имя:</label>
-                            <input type="text" id="name" name="user_name" />
-                        </div>
-                        <div class="pure-u-1">
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="_replyto" />
-                        </div>
-                        <div class="pure-u-1"> 
-                            <label for="msg">Сообщение:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </div>
-                        <input type="hidden" name="_subject" value="Сообщение с сайта" />
-                        <input type="text" name="_gotcha" style="display:none" />
-                        <button class="pure-button pure-u-1 pure-u-md-1-3 button" type="submit" value="Send">Отправить</button>                       
-                    </div>     
-                </form>
-                <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
-            </section> 
-        </main>
-        
-        <footer class="light">
-            <p><a href="http://vk.com/anastasia_noir" target="_blank"><i class="fa fa-vk fa-lg"></i></a><!--
-            --><a href="https://www.instagram.com/anastasia_noir_mua/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></p>
-            <p class="number">+7 (911) 824 36 51</p>
-            <p>Анастасия Чепелевская</p>
-        </footer>
-        
-        <script type="text/javascript" src="js/scroll.js"></script>
-        <script type="text/javascript" src="js/fancy.js"></script>
-        <script type="text/javascript" src="js/menu-onclick.js"></script>
-        <script type="text/javascript" src="js/formspree.js"></script>
-
-    </body>
-</html>
+    
+    <section class="light pure-u-1" id="page-three">
+        <h2 id="portfolio">Портфолио</h2>
+        <a class="fancybox" rel="group" href="works/photo-01.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-01.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-10.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-10.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-03.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-03.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-04.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-04.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-05.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-05.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-06.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-06.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-07.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-07.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-09.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-09.jpg)"></div></div></a><!-- 
+        --><a class="fancybox" rel="group" href="works/photo-12.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-12.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-14.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-14.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-15.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-15.jpg)"></div></div></a><!--
+        --><a class="fancybox" rel="group" href="works/photo-08.jpg"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url(works/photo-08.jpg)"></div></div></a>              
+    </section>
+    
+    <section class="dark pure-u-1" id="page-four">
+        <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div>
+        <form class="pure-form pure-u-22-24 pure-u-sm-3-5 pure-u-lg-1-2" id="contactform" method="POST">
+            <h2>Контакты</h2>
+            <p>Вы можете связаться со мной, отправив сообщение<br>или по телефону <strong>+7 (911) 8243651</strong></p>
+            <div class="pure-g">  
+                <div class="pure-u-1">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+                <div class="pure-u-1">
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="_replyto" />
+                </div>
+                <div class="pure-u-1"> 
+                    <label for="msg">Сообщение:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="Сообщение с сайта" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <button class="pure-button pure-u-1 pure-u-md-1-3 button" type="submit" value="Send">Отправить</button>                       
+            </div>     
+        </form>
+        <div class="pure-u-1-24 pure-u-sm-1-5 pure-u-lg-1-4"></div> 
+    </section> 
+</main>

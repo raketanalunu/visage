@@ -1,8 +1,4 @@
-
 $(document).ready(function(){
-
-                    // = Вешаем событие прокрутки к нужному месту
-                    //	 на все ссылки якорь которых начинается на #
     $('a[href^="#"]').bind('click.smoothscroll',function (e) {
     e.preventDefault();
 

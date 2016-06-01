@@ -45,13 +45,11 @@ nav a:hover {
 }
 
 #menu-checkbox {
-  /* чекбокс скрыт */
   display: none;
 }
 
 .menu, 
 .contacts {
-  /* пункты меню скрыты */
   display: none;
   padding: 0;
   margin: 0;
@@ -59,8 +57,6 @@ nav a:hover {
 
 .menu li,
 .contacts li {
-  /* пункты меню расположены вертикально */
-  /* каждый имеет ширину 100% */
   font-size: 1em;
   display: block;
 }
@@ -74,7 +70,6 @@ nav a:hover {
 
 .menu a,
 .contacts a {
-  /* немного стилизуем ссылки */
   display: block;
   color: #ffffff;
   padding: 1rem;
@@ -85,19 +80,16 @@ nav a:hover {
   text-align: left;
   display: block;
   margin: 1rem;
-  /* не забываем явно указать каким должен быть курсор */
   cursor: pointer;
   color: #fff;
 }
 
 .toggle-button:after {
-  /* получаем данные из атрибута data-open в html */
   display: block;
   margin: 10px 0;
   padding: 10px 30px;
 }
 #menu-checkbox:checked + nav[role="navigation"] .menu {
-  /* когда чекбокс активен меню становится видимым */
   display: block;
 }
 
@@ -207,6 +199,17 @@ footer a:hover i {
     height: 12rem;
 }
 
+.columns {
+    padding: 2rem;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.columns img {
+    margin-top: 1rem;    
+}
+
 .photo-box {
     position: relative;
     padding-top: 80%;
@@ -241,15 +244,6 @@ footer a:hover i {
     display: inline-block;    
 }
 
-.col {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    background: #ffffff;
-    width: 100%;
-    border-bottom: 1rem solid #F8EFFB;
-}
-
 
 .button {
     margin: 1rem auto;
@@ -272,7 +266,6 @@ footer a:hover i {
     }
     
     .toggle-button {
-        /* label скрыт */
         display: none;
     }
     
@@ -286,8 +279,6 @@ footer a:hover i {
 
     .menu li,
     .contacts li {
-        /* пункты меню расположены вертикально */
-        /* каждый имеет ширину 100% */
         font-size: 1em;
         display: inline-block;
     }
@@ -300,19 +291,6 @@ footer a:hover i {
         font-size: 0.8rem;
         text-align: right;
         float: right;  
-    }
-    
-    
-    .columns {
-        display: table; 
-        width: 100%;
-    }
-
-    .columns > .col,
-    .columns > noindex > .col {
-        display: table-cell;    
-        width: auto; 
-        border-right: 1rem solid #F8EFFB;
     }
 
 }

@@ -1,0 +1,14 @@
+url: http://anastasiavisage.ru
+title: Визажист Анастасия Чепелевская
+encoding: UTF-8
+baseurl: ""
+description: "Визажист Анастасия Чепелевская. Помогает девушкам стать неотразимыми к любому мероприятию."
+
+
+# Build settings
+markdown: kramdown
+
+
+# Content
+about: "Обо мне"
+avatar: "images/avatar.jpg"
