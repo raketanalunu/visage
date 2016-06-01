@@ -199,7 +199,6 @@ footer a:hover i {
     padding: 10rem 0;
 }
 
-
 .avatar {
     border-radius: 100%;
     margin: 2rem auto;
@@ -304,19 +303,14 @@ footer a:hover i {
     }
     
     
-    #columns {
-        display: table;
-        box-sizing: border-box;  
-        margin-left: 0;
-        margin-right: 0;
+    .columns {
+        display: table; 
         width: 100%;
     }
 
-    #columns > .col,
-    #columns > noindex > .col {
-        display: table-cell;
-        vertical-align: top;
-        box-sizing: border-box;
+    .columns > .col,
+    .columns > noindex > .col {
+        display: table-cell;    
         width: auto; 
         border-right: 1rem solid #F8EFFB;
     }
