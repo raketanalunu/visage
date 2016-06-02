@@ -42,7 +42,7 @@ layout: default
         <h2 id="portfolio">{{ site.portfolio }}</h2><!--
         {% for image in site.static_files %}
             {% if image.path contains 'works/' %}
-            --><a class="fancybox" rel="group" href="{{ image.path }}"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url({{ image.path }})"></div></div></a><!--
+            --><a class="fancybox" rel="group" href="{{ site.baseurl }}{{ image.path }}"><div class="photo-box pure-u-sm-1-2 pure-u-lg-1-4"><div class="photo" style="background-image: url({{ site.baseurl }}{{ image.path }})"></div></div></a><!--
             {% endif %}
         {% endfor %}
         -->
