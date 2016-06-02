@@ -2,7 +2,7 @@ url: http://anastasiavisage.ru
 title: Визажист Анастасия Чепелевская
 encoding: UTF-8
 baseurl: ""
-description: "Визажист Анастасия Чепелевская. Помогает девушкам стать неотразимыми к любому мероприятию."
+description: "Помогаю девушкам стать неотразимыми к любому мероприятию."
 
 
 # Build settings
@@ -12,3 +12,12 @@ markdown: kramdown
 # Content
 about: "Обо мне"
 avatar: "images/avatar.jpg"
+ph-number: "+7 (911) 824 36 51"
+services: "Услуги"
+make-up: "Макияж"
+hair: "Прическа"
+eyebrows: "Брови"
+portfolio: "Портфолио"
+contacts: "Контакты"
+vk: "http://vk.com/anastasia_noir"
+instagram: "https://www.instagram.com/anastasia_noir_mua/"
